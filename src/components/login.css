@@ -1,7 +1,13 @@
 
 *{
-    box-sizing: border-box ;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box ;
+
 }
+html,body {height:100%;}
+body {margin:0;}
+
 .login .login_main{
   margin-top: 20px;
 }
@@ -124,16 +130,12 @@ text-decoration: none;
      box-sizing: border-box;   
      margin-bottom: 20px;
  }  
- .login input:focus {
+ .login .input_box:focus {
   outline: 2px solid orange;
   border: none;
   box-shadow: 0px 4px 4px rgba(247, 131, 29, 0.18);
 }
-.login input:focus + .form_label
-{
-    background-color:purple;
-    color: red;
-}
+
 
   
 .login .form_label{
@@ -167,7 +169,7 @@ line-height: 17px;
 }
 
 .login  .Icontoggle {
-  margin-left: 385px;;
+  margin-left: 365px;;
   position: absolute;
   transform: translate(-25% , -236%);
 }
@@ -222,68 +224,68 @@ color: #FAA61A;
 .login .forgot_style{
   text-decoration: none;
 }
+.signup input[type="checkbox"] + label {
+  display: inline-block;
+  margin: 0.2em;
+  cursor: pointer;
+  padding: 0.2em;
 
-.login input[type=checkbox] + label {
-    display: block;
-    margin: 0.2em;
-    cursor: pointer;
-    padding: 0.2em;
-    width: 183px;
-height: 15px;
-left: 764px;
-top: 625px;
+  height: 15px;
+  left: 764px;
+  top: 625px;
 
-font-family: Montserrat;
-font-style: normal;
-font-weight: 500;
-font-size: 12px;
-line-height: 15px;
-color: #000000;
-  }
-  
-  .login .check_text {
-    margin-top: -25%;
-  }
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
 
-  .login  input[type=checkbox] {
-    display: none;
-  }
-  
-  .login  input[type=checkbox] + label:before {
-    content: "\2714";
-    border: 0.1em solid #000;
-    border-radius: 0.2em;
-    display: inline-block;
-    width: 1.6em;
-    height: 1.6em;
-    padding-left: 0.2em;
-    padding-bottom: 0.3em;
-    margin-right: 0.2em;
-    vertical-align: bottom;
-    color: transparent;
-    transition: .2s;
-  }
-  
-  .login input[type=checkbox] + label:active:before {
-    transform: scale(0);
-  }
-  
-  .login input[type=checkbox]:checked + label:before {
-    background: linear-gradient(94.64deg, #ED1C24 0%, #FAA61A 100%);;
-    color: #fff;
-    border:none
-  }
-  
-  .login input[type=checkbox]:disabled + label:before {
-    transform: scale(1);
-    border-color: #aaa;
-  }
-  
-  .login input[type=checkbox]:checked:disabled + label:before {
-    transform: scale(1);
-    background-color: #bfb;
-    border-color: #bfb;
-  }
+  color: #000000;
+}
+
+.signup input[type="checkbox"] {
+  display: none;
+}
+
+.signup input[type="checkbox"] + label:before {
+  content: "\2714";
+  border: 0.1em solid #000;
+  border-radius: 0.2em;
+  display: inline-block;
+  width: 1.6em;
+  height: 1.6em;
+  padding-left: 6px;
+  padding-bottom: 0.3em;
+  margin-right: 0.2em;
+  vertical-align: bottom;
+  color: transparent;
+  transition: 0.2s;
+  padding-top: 1px;
+}
+
+.signup input[type="checkbox"] + label:active:before {
+  transform: scale(0);
+}
+
+.signup input[type="checkbox"]:checked + label:before {
+  background: linear-gradient(94.64deg, #ed1c24 0%, #faa61a 100%);
+  color: #fff;
+  border: none;
+}
+
+.signup input[type="checkbox"]:disabled + label:before {
+  transform: scale(1);
+  border-color: #aaa;
+}
+
+.signup input[type="checkbox"]:checked:disabled + label:before {
+  transform: scale(1);
+  background-color: #bfb;
+  border-color: #bfb;
+}
+
+
 
   .login .login_banner_img{
     /* float: center; */
@@ -336,6 +338,26 @@ filter: drop-shadow(10px -16px 44px rgba(0, 0, 0, 0.23));
     margin-right: 10px;
     margin-left: 10px;
    
+  }
+  /* .login .google_outlook svg{
+    width: 40px;
+     border: 1px solid #A7A9AC !important;
+    
+    
+  } */
+
+  .login .microsoft{
+    width: 40px !important;
+    border-right: 1px solid #A7A9AC !important;
+    box-shadow: none !important;
+    border-radius: 3px !important;
+  }
+
+  .login .google_style button{
+    width: 40px;
+    border: 1px solid #A7A9AC !important;
+    box-shadow: none !important;
+    border-radius: 3px !important;
   }
 
   .login .login_text{
@@ -457,3 +479,19 @@ color: #A7A9AC;
   }
   
 }
+
+.login .microsoft_style svg path{
+  display: none;
+}
+
+.login .microsoft_style{
+   background:url('./images/image\ 19.png');
+        background-size: 20px 20px;
+        position:absolute;
+        width:20px;
+        height:20px;
+        /* margin-left:-30px; */
+        background-repeat: no-repeat;
+}
+
+

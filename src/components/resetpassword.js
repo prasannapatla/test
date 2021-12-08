@@ -187,19 +187,25 @@ $(function() {
         <div className="container">
           <div className="row">
             <div className="col-lg-6 col-sm-12 banner-img">
-            <img src={banner_img} className="login_banner_img" alt="login banner image" />
+              <img
+                src={banner_img}
+                className="login_banner_img"
+                alt="login banner image"
+              />
             </div>
             {/* <div className="col-lg-1"></div> */}
             <div className="col-lg-6 col-sm-12 login_main">
               <div className="">
                 <div className="row">
                   <div className="col-6">
-                  <img src={logo} className="login_logo" alt="logo" />
+                    <img src={logo} className="login_logo" alt="logo" />
                   </div>
                 </div>
               </div>
-              <h4 className="welcom_text" style={{"margin-top":"7%"}}>Reset password</h4>
-              <form >
+              <h4 className="welcom_text" style={{ "margin-top": "7%" }}>
+                Reset password
+              </h4>
+              <form>
                 <div className="">
                   <div className="input-group">
                     <input
@@ -216,27 +222,7 @@ $(function() {
                       Create Password
                     </label>
                   </div>
-                  {/* <span className="Icontoggle">
-                    {show ? (
-                      <faFontAwesomeIcon
-                        icon={faEyeSlash}
-                        className="fas fa-eye-slash"
-                        id="show_hide"
-                        onClick={handleShowHide}
-                      >
-                         Hide Password
-                      </faFontAwesomeIcon>
-                    ) : (
-                      <faFontAwesomeIcon
-                        icon={faEye}
-                        className="fas fa-eye"
-                        id="show_hide"
-                        onClick={handleShowHide}
-                      >
-                        Show Password
-                      </faFontAwesomeIcon>
-                    )}
-                  </span> */}
+                 
                   <div class="password_validation" id="validate">
                     <p id="capital">
                       <faFontAwesomeIcon
@@ -248,9 +234,8 @@ $(function() {
                         className="fas fa-times icon"
                       />
                       <span className="valid-text">1 uppercase character</span>
-                      
                     </p>
-                    <p id="character" style={{"margin-top":"-11px"}}>
+                    <p id="character" style={{ "margin-top": "-11px" }}>
                       <faFontAwesomeIcon
                         icon={faTimes}
                         className="fas fa-check icon"
@@ -259,9 +244,9 @@ $(function() {
                         icon={faCheck}
                         className="fas fa-times icon"
                       />
-                      <span className="valid-text">1 special character</span>              
+                      <span className="valid-text">1 special character</span>
                     </p>
-                    <p id="number" style={{"margin-top":"-11px"}}>
+                    <p id="number" style={{ "margin-top": "-11px" }}>
                       <faFontAwesomeIcon
                         icon={faTimes}
                         className="fas fa-check icon"
@@ -272,7 +257,7 @@ $(function() {
                       />
                       <span className="valid-text">1 number</span>
                     </p>
-                    <p id="count" style={{"margin-top":"-11px"}}>
+                    <p id="count" style={{ "margin-top": "-11px" }}>
                       <faFontAwesomeIcon
                         icon={faTimes}
                         className="fas fa-check icon"
@@ -290,13 +275,14 @@ $(function() {
                         icon={faTimes}
                         className="fas fa-check icon"
                       />
-                      <span className="sucess-text">Your password is secure and you’re  all set!</span>
-                      
+                      <span className="sucess-text">
+                        Your password is secure and you’re all set!
+                      </span>
                     </p>
                   </div>
-                  <div className="input-group" style={{"margin-top":"-5%"}}>
+                  <div className="input-group" style={{ "margin-top": "-5%" }}>
                     <input
-                    onChange={handleInputChange}
+                      onChange={handleInputChange}
                       type="password"
                       id="confirmpassword"
                       className="input_box2"
@@ -314,7 +300,6 @@ $(function() {
                         className="fas fa-check icon"
                       />
                       <span className="match-text">Passwords matched!</span>
-                      
                     </p>
                   </div>
                   <div className="password_notmatch" id="notMatch">
@@ -323,8 +308,9 @@ $(function() {
                         icon={faTimes}
                         className="fas fa-times icon"
                       />
-                      <span className="notmatch-text">Passwords don’t match!</span>
-                      
+                      <span className="notmatch-text">
+                        Passwords don’t match!
+                      </span>
                     </p>
                   </div>
 
@@ -335,13 +321,19 @@ $(function() {
               </form>
             </div>
           </div>
-          <div className="row">
-          <div className="col-6 footer_padding" style={{"margin-top":"12%"}}>
-            <p className="footer_text">A PRODUCT OF</p>
-            <img src={comviva_logo} className="footer_logo" alt="logo" />
-            </div>
-          </div><br/><br/>
         </div>
+      </section>
+      <section className="footer">
+        <div className="container">
+          <div className="row">
+            <div className="col-6 footer_padding" style={{ "margin-top": "12%" }}>
+              <p className="footer_text">A PRODUCT OF</p>
+              <img src={comviva_logo} className="footer_logo" alt="logo" />
+            </div>
+          </div>
+        </div>
+        <br />
+        <br />
       </section>
     </div>
   );

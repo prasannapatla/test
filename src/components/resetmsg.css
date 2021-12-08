@@ -1,8 +1,13 @@
 *{
     box-sizing: border-box ;
+     padding: 0;
+     margin: 0;
+ 
 }
 .resetmsg {
     margin-top: 12%;
+    min-height: 100vh;
+    margin-bottom:0
 }
 
 .resetmsg .login_main{
@@ -198,3 +203,7 @@ color: #A7A9AC;
 }
 
 }
+
+/* .footer{
+   margin: 10px 0 0 0;
+} */
